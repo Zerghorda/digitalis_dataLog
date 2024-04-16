@@ -38,6 +38,7 @@ class Feladatok():
                 self.robot.drive(100,0)
                 self.data.log("Hány db vonal:")
                 self.data.log(db)
+                self.data.log('Hosszak:')
                 for vonalakSzama in range(db):
                         vege = False
                         fekete = False
@@ -50,11 +51,12 @@ class Feladatok():
                                         vege = True
                                         hossz = self.ido.time()
                                         hosszok.append(hossz)
+                                        self.data.log(hossz)
                         self.robot.stop(Stop.BRAKE)
                         print(hossz)
                 print(hosszok)
-                self.data.log('Hosszak:')
-                self.data.log(hosszok)
+               
+                #self.data.log(hosszok)
                 return hosszok
                 #self.data.log(hosszok)
                # print(self.data)
