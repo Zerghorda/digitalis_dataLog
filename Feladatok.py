@@ -34,7 +34,7 @@ class Feladatok():
                 self.vonalHossza()
         def vonalHossza(self):
                 hosszok = []
-                db = 5
+                db = 4
                 self.robot.drive(100,0)
                 self.data.log("Hány db vonal:")
                 self.data.log(db)
